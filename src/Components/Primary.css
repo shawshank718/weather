@@ -1,0 +1,43 @@
+.PrimaryWrapper {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.11);
+    border-radius: 10px;
+    padding: var(--app-gap);
+    display: flex;
+    justify-content: space-between;
+}
+
+.PrimaryWrapper .WeatherDetailsWrapper,
+.PrimaryWrapper .OtherDetailsWrapper {
+    display: flex;
+}
+
+.PrimaryWrapper .WeatherDetailsWrapper {
+    align-items: center;
+}
+
+.PrimaryWrapper .WeatherDetailsWrapper > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.PrimaryWrapper .WeatherDetailsWrapper .Temperature {
+    font-size: 6rem;
+    font-weight: 200;
+}
+
+.PrimaryWrapper .WeatherDetailsWrapper .Description {
+    text-transform: capitalize;
+}
+
+.PrimaryWrapper .WeatherDetailsWrapper .WeatherIcon {
+    height: 60%;
+    margin-left: 16px;
+}
+
+.PrimaryWrapper .OtherDetailsWrapper {
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
